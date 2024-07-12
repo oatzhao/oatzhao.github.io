@@ -56,3 +56,22 @@ p::first-letter {
     font-weight: bold; /* Optionally make the drop cap bold */
     line-height: 1; /* Ensure proper line height for drop cap */
 }
+
+/* Style IMDb info definition list */
+.imdb-info {
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.imdb-info dt {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.imdb-info dd {
+    margin-left: 0;
+    margin-bottom: 10px;
+}
