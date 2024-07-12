@@ -37,3 +37,22 @@ img {
     width: 200px;
     height: auto;
 }
+
+/* Remove underline from hyperlinks by default */
+a {
+    text-decoration: none;
+}
+
+/* Show underline on hover */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Drop caps for paragraphs */
+p::first-letter {
+    font-size: 1.5em; /* 1.5 times the normal font size */
+    float: left; /* Float the first letter to the left */
+    margin-right: 6px; /* Adjust margin for proper spacing */
+    font-weight: bold; /* Optionally make the drop cap bold */
+    line-height: 1; /* Ensure proper line height for drop cap */
+}
