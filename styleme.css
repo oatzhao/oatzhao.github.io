@@ -1,0 +1,39 @@
+/* Change the color of the h1 and h2 elements */
+h1 {
+    color: #2c3e50;
+}
+
+h2 {
+    color: #e74c3c;
+}
+
+/* Change the font properties of the body and p elements */
+body {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    background-color: #f5f5f5;
+}
+
+p {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Center align the text in the h1 element */
+h1 {
+    text-align: center;
+}
+
+/* Add some padding to the body */
+body {
+    padding: 20px;
+}
+
+/* Style the images */
+img {
+    border: 2px solid #2c3e50;
+    border-radius: 10px;
+    width: 200px;
+    height: auto;
+}
