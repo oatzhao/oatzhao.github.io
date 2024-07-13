@@ -65,6 +65,13 @@ q {
     font-style: italic;
 }
 
+#review-count {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
 #footer {
     text-align: center;
     margin-top: 20px;
