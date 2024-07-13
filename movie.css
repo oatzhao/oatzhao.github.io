@@ -14,12 +14,13 @@ body {
 }
 
 #content {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     background-color: #e0f7ef;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    overflow: hidden;
 }
 
 h1 {
@@ -29,21 +30,13 @@ h1 {
 }
 
 #overview img{
-    width: 30%;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    float: right;
-    margin-right: 20px;
+    float: right; /* Float right to align on the right side */
+    margin-left: 20px; /* Optional margin for spacing */
 }
 
 #details {
     width: 30%;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     float: right;
-    margin-right: 20px;
 }
 
 #reviews {
