@@ -20,7 +20,7 @@ h1 {
 }
 
 #overview img{
-    text-align: center;
+    display: inline-block;
 }
 
 #overview {
