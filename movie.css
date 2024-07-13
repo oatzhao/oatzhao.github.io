@@ -29,7 +29,12 @@ h1 {
 }
 
 #overview img{
-    display: inline-block;
+    width: 30%;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    float: right;
+    margin-right: 20px;
 }
 
 #details {
