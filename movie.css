@@ -21,6 +21,8 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
+    overflow: hidden; /* Clear the floats */
+    position: relative; /* Ensure relative positioning */
 }
 
 h1 {
@@ -29,18 +31,27 @@ h1 {
     margin: 20px 0;
 }
 
-#overview img{
+#overview {
+    width: 40%;
     float: right; /* Float right to align on the right side */
-    margin-left: 20px; /* Optional margin for spacing */
+    clear: both; /* Clear both to prevent overlap */
+    position: absolute; /* Position absolutely within #content */
+    top: 0; /* Align to the top of #content */
+    right: 0; /* Align to the right of #content */
+    margin-top: 20px; /* Optional margin for spacing */
+}
+
+#overview img {
+    width: 100%; /* Ensure image width is 100% of its container */
 }
 
 #details {
-    width: 30%;
+    width: 40%;
     float: right;
 }
 
 #reviews {
-    width: 60%;
+    width: 50%;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
