@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#banner img {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+#overview {
+    text-align: center;
+}
+
+#details {
+    margin: 20px auto;
+    width: 80%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#reviews {
+    margin: 20px auto;
+    width: 80%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.review:last-child {
+    border-bottom: none;
+}
+
+.review img {
+    vertical-align: middle;
+}
+
+q {
+    font-style: italic;
+}
+
+#footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#footer img {
+    width: 88px;
+    height: 31px;
+    border: none;
+}
