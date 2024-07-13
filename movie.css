@@ -19,10 +19,6 @@ h1 {
     margin: 20px 0;
 }
 
-#overview img{
-    display: inline-block;
-}
-
 #overview {
     width: 30%;
     background-color: white;
