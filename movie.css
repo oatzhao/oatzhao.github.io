@@ -13,16 +13,15 @@ body {
     width: 100%;
 }
 
-#content {
-    width: 80%;
+.container {
+    width: 60%;
     margin: 0 auto;
-    background-color: #e0f7ef;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    overflow: hidden;
     overflow: hidden; /* Clear the floats */
     position: relative; /* Ensure relative positioning */
+    display: flex;
 }
 
 h1 {
@@ -35,18 +34,6 @@ h2 {
     margin: 20px 0;
 }
 
-#overview {
-    width: 40%;
-    float: right; /* Float right to align on the right side */
-}
-
-
-#details {
-    width: 40%;
-    float: right;
-    margin-top: 120px;
-}
-
 #rotten-score span {
     font-size: 100px; /* Match the font size to the image height */
     color: red; /* Set text color to red */
@@ -54,25 +41,69 @@ h2 {
     vertical-align: middle; /* Align text vertically with the image */
 }
 
-#reviews {
-    width: 50%;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    float: left;
+.side-column {
+    display: flex;
+    flex-direction: column;
+    width: 30%; /* Adjust width as needed */
 }
 
-.review {
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
+.overview{
+    top: 0;
+    float: right; /* Float right to align on the right side */
+    margin-left: 10px;
 }
 
-.review:last-child {
-    border-bottom: none;
+
+.details {
+    float: right;
 }
 
-.review img {
-    vertical-align: middle;
+.banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%; /* Cover the entire container */
+    height: 70px; /* Adjust height as needed */
+    background-image: url('bannerbg.png');
+    background-size: cover;
+    background-position: center top;
+    z-index: 0; /* Ensure banner is behind .reviews */
+}
+
+.inline-block-container {
+    display: inline-block; /* Display children inline */
+    vertical-align: top; /* Align to the top of the parent */
+}
+
+.inline-block-container img,
+.inline-block-container h1 {
+    margin: 0; /* Remove default margin */
+}
+
+.inline-block-container h1 {
+    font-size: 36px; /* Adjust font size as needed */
+    color: red; /* Example text color */
+}
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap if container is too narrow */
+    max-width: 800px; /* Limit width of reviews */
+    margin: 0 auto; /* Center align container */
+    gap: 20px; /* Gap between items */
+}
+
+.reviews p {
+    flex: 1 1 40%; /* Each paragraph takes 40% width, allows for 2 columns */
+    border: 1px solid #ccc; /* Add 1px solid border with light gray color */
+    padding: 20px; /* Padding for each paragraph */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.reviews img {
+    width: 50px; /* Adjust image size as needed */
+    vertical-align: middle; /* Align images vertically in the middle */
+    margin-right: 10px; /* Add margin between image and text */
 }
 
 q {
@@ -86,13 +117,13 @@ q {
     text-align: center;
 }
 
-#footer {
-    text-align: center;
-    margin-top: 20px;
+.footer {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    text-align: right;
 }
-
-#footer img {
-    width: 88px;
-    height: 31px;
-    border: none;
+.footer a {
+    display: inline-block;
+    margin-bottom: 5px;
 }
