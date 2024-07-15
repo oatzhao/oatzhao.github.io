@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header, .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.menu-container {
+    display: flex;
+    background-color: #f4f4f4;
+    justify-content: flex-start; /* Align items to the left */
+    padding: 0; /* Remove padding */
+}
+
+.menu {
+    padding: 10px 15px; /* Adjust padding as needed */
+    text-align: center;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    border-bottom: none; /* Remove bottom border */
+    cursor: pointer; /* Add pointer cursor */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    margin-right: -1px; /* Remove margin between menu items */
+}
+
+.menu:first-child {
+    border-top-left-radius: 5px; /* Rounded corners for first tab */
+    border-bottom-left-radius: 5px;
+}
+
+.menu:last-child {
+    border-top-right-radius: 5px; /* Rounded corners for last tab */
+    border-bottom-right-radius: 5px;
+}
+
+.menu:hover {
+    background-color: #ccc; /* Background color on hover */
+}
+
+.menu.active {
+    background-color: #ccc; /* Active tab background color */
+}
+
+.content {
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0; /* No gap between columns */
+}
+
+.column {
+    padding: 150px;
+    text-align: center;
+    background-color: #d4d4d4;
+}
+
+@media (max-width: 600px) {
+    .columns {
+        grid-template-columns: 1fr; /* Single column layout on small screens */
+    }
+
+    .column {
+        width: 100%;
+        margin-top: 20px; /* Space between columns */
+    }
+
+    #column1, #column2 {
+        margin-top: 0; /* No top margin for first two columns */
+    }
+
+    #column3 {
+        order: 3; /* Move column3 below column1 and column2 */
+    }
+}
