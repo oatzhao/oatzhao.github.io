@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growing Circles</title>
+    <link rel="stylesheet" href="event.css">
+</head>
+<body>
+    <div id="container">
+        <div id="controls">
+            <label for="width">Width:</label>
+            <input type="number" id="width" value="50"><br>
+            <label for="growth">Growth Amount:</label>
+            <input type="number" id="growth" value="10"><br>
+            <label for="interval">Grow Rate (ms):</label>
+            <input type="number" id="interval" value="250"><br>
+            <label for="numCircles">Number of Circles:</label>
+            <input type="number" id="numCircles" value="1"><br>
+            <button id="start">Start</button>
+        </div>
+        <div id="circle-container"></div>
+    </div>
+    <script src="event.js"></script>
+</body>
+</html>
